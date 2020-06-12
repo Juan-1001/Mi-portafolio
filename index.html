@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale-1.0, minimum-sacale=1.0, shrink-to-fit=no">
+
+    <title>Nav</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="https://kit.fontawesome.com/54d316d0ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="btn-menu"><span>Menú <i class="fas fa-bars"></i></span></a>
+        </div>
+    
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+            <li><a href="#"><i class="fas fa-user-check"></i> Detalles personales</a></li>
+            <li><a href="#"><i class="fas fa-tools"></i> Mis habilidades</i></a> </li>
+            <li><a href="#"><i class="fas fa-university"></i> Formación</a></li>
+            <li><a href="#"><i class="fas fa-user-tie"></i> ¿Qué hago?</i></a></li>
+            <li class="submenu">
+                <a href="#"><i class="fas fa-rocket"></i> Proyectos <i class="caret fas fa-chevron-down"></i></a>
+                <ul class="children">
+                    <li><a href=""> <i class="fas fa-circle"></i>Ilustración digital</i></a></li>
+                    <li><a href=""> <i class="fas fa-circle"></i>Fotografía</i></a></li>
+                    <li><a href=""> <i class="fas fa-circle"></i>Animación</i></a></li>
+                    <li><a href=""> <i class="fas fa-circle"></i>Audiovisual</i></a></li>
+                    <li><a href=""> <i class="fas fa-circle"></i>Programación web</i></a></li>
+                </ul>
+            </li>
+            <li><a href="#"><i class="fas fa-address-book"></i> Contactos</a></li>
+        </ul>
+    </nav>
+    </header>
+    <!-- Frase inspiradora -->
+
+    <div class="container-fluid">
+        <article>
+            <p  id="frase">La  creatividad es inteligencia divertiéndose.<br>-Albert Einstein</p>
+       </article>
+    </div>
+
+    <!-- Auto biografia -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="biografiatitulo">Auto biografía</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <p class="biografia">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
+                siempre se jactaban de ello y a medida que fuí creciendo estas habilidades crecieron conmigo de la mano con el 
+                liderazgo y orden, habilidades que fuí desarrolando en la secundaria ya que mis compañeros para librarse del trabajo
+                que implicaba ser el líder de grupo y demás activiades, entonces siempre me escojían a mí y yo asumía esta responsabilidad 
+                y en les gradezco por tomar esa desición ya que gracioas a ello hoy en día no temo a hablar en público y socializar con personas
+                además también tengo buen liderazgo y manejo de grupo.<br>
+                Desde siempre mis padres y profesores me han dicho y recalcado que estamos en la era de la tecnología y que aprender a entederla
+                y manejarla es algo emprecindible para cada unos de nosotros entonces debido a ello empecé a empezar a realizar mi creatividad de manera 
+                digital, y empecé a estudiar un técnico en Producción Multimedia y en donde me fue muy bien afortunadamente y ahora me dedico a esto y amo
+                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.
+            </p>
+        </article>
+    </div>
+
+    <!-- Habilidades -->
+
+        <div class="row">
+            <div class="col-lx-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h1 class="animate__animated animate__backInLeft">Habilidades blandas</h1>
+                    <h3>Creatividad e innovación <i class="fas fa-hat-wizard"></i></h3>
+                    <div onclick="move12()" id="myProgress12">
+                        <div id="myBar12">0%</div>
+                    </div>
+                <br>
+                <h3>Sociable <i class="fas fa-people-carry"></i></h3>
+                <div onclick="move13()" id="myProgress13">
+                    <div id="myBar13">0%</div>
+                </div>
+                <br>
+                <h3>Asertivo <i class="fas fa-check-square"></i></h3>
+                <div onclick="move14()" id="myProgress14">
+                    <div id="myBar14">0%</div>
+                </div>
+                <br>
+                <h3>Paciente o daptable <i class="fas fa-puzzle-piece"></i></h3>
+                <div onclick="move15()" id="myProgress15">
+                    <div id="myBar15">0%</div>
+                </div>
+                <br>
+                <h3>Cominucación <i class="fas fa-comments"></i></h3>
+                <div onclick="move16()" id="myProgress16">
+                    <div id="myBar16">0%</div>
+                </div>
+                    <br>
+                <h3>Cultura empresarial <i class="fas fa-handshake"></i></h3>
+                <div onclick="move17()" id="myProgress17">
+                    <div id="myBar17">0%</div>
+                </div>
+                    <br>
+                <h3>Servicio al cliente <i class="fas fa-star"></i></h3>
+                <div onclick="move18()" id="myProgress18">
+                    <div id="myBar18">0%</div>
+                </div>
+                <br>
+                <h3>Inteligencia emocional <i class="fas fa-heart"></i></h3>
+                <div onclick="move19()" id="myProgress19">
+                    <div id="myBar19">0%</div>
+                </div>
+                <br>
+                <h3>Productividad <i class="fas fa-cogs"></i></h3>
+                <div onclick="move20()" id="myProgress20">
+                    <div id="myBar20">0%</div>
+                </div>
+                <br>
+                <h3>Fluidez verbal <i class="fas fa-comment-dots"></i></h3>
+                <div onclick="move21()" id="myProgress21">
+                    <div id="myBar21">0%</div>
+                </div>
+                <br>
+                <h3>Gestión del cambio <i class="fas fa-random"></i></h3>
+                <div onclick="move22()" id="myProgress22">
+                    <div id="myBar22">0%</div>
+                </div>
+            </div>
+
+            <!-- Habilidades ténicas -->
+
+            <div class="col-lx-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <h1 class="animate__animated animate__backInRight">Habilidades técnicas</h1>
+                <h3>Ofimática <i class="fas fa-file-alt"></i></h3>
+                <div onclick="move()" id="myProgress">
+                    <div id="myBar">0%</div>
+                </div>
+                <br>
+                <h3>Adobe Illustrator <i class="fas fa-pen-nib"></i></h3>
+                <div onclick="move2()" id="myProgress2">
+                    <div id="myBar2">0%</div>
+                </div>
+                <br>
+                <h3>Adobe Photoshop <i class="fas fa-file-image"></i></h3>
+                <div onclick="move3()" id="myProgress3">
+                    <div id="myBar3">0%</div>
+                </div>
+                <br>
+                <h3>HTML5 <i class="fab fa-html5"></i></h3>
+                <div onclick="move4()" id="myProgress4">
+                    <div id="myBar4">0%</div>
+                </div>
+                <br>
+                <h3>CSS3 <i class="fab fa-css3-alt"></i></h3>
+                <div onclick="move5()" id="myProgress5">
+                    <div id="myBar5">0%</div>
+                </div>
+                <br>
+                <h3>InDesign <i class="fas fa-newspaper"></i></h3>
+                <div onclick="move6()" id="myProgress6">
+                    <div id="myBar6">0%</div>
+                </div>
+                <br>
+                <h3>Animate <i class="fas fa-arrows-alt"></i></h3>
+                <div onclick="move7()" id="myProgress7">
+                    <div id="myBar7">0%</div>
+                </div>
+                <br>
+                <h3>Protools <i class="fas fa-music"></i> <i class="fas fa-volume-up"></i></h3>
+                <div onclick="move8()" id="myProgress8">
+                    <div id="myBar8">0%</div>
+                </div>
+                <br>
+                <h3>Javascript <i class="fab fa-js"></i></h3>
+                <div onclick="move9()" id="myProgress9">
+                    <div id="myBar9">0%</div>
+                </div>
+                <br>
+                <h3>Git <i class="fab fa-git-alt"></i></h3>
+                <div onclick="move10()" id="myProgress10">
+                    <div id="myBar10">0%</div>
+                </div>
+                <br>
+                <h3>Bootstrap <i class="fab fa-bootstrap"></i></h3>
+                <div onclick="move11()" id="myProgress11">
+                    <div id="myBar11">0%</div>
+                </div>
+                <br>
+            </div>
+        </div>
+</body>
+</html>
