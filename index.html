@@ -3,41 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale-1.0, minimum-sacale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Productor multimedia con conocimientos en ilustración digital, dotografía, edición de imagen, audiovuales, animación y programación web">
+    <meta name="keywords" content="multimedia, producción, imagen, ilustracion, fotografía, edición, animación, video, programación, código, photoshop, adobe, diseño, digital, html, css, javascript">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Juan Herrea">
+    <meta name="copyright" content="Juan Herrera">
 
-    <title>Nav</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Juan Herrera</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/vertical.news.slider.css?v=1.0">
     <script src="https://kit.fontawesome.com/54d316d0ae.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="codigo.js"></script>
+    <!-- scroll-->
+
+	<script src="js/smooth-scroll.polyfills.min.js"></script>
+	
+	<!-- Always get the latest version -->
+    <!-- Not recommended for production sites! -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get minor updates and patch fixes within a major version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get patch fixes within a minor version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+    <script>
+        var scroll = new SmoothScroll('a[href*="#inicio"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#frase"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#interes"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#habilidades"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#educacion"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#experiencia"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#quehago"]', {
+        speed: 900
+        });
+    </script>
 </head>
 <body>
     <header>
+        <!-- meni media queries -->
         <div class="menu_bar">
             <a href="#" class="btn-menu"><span>Menú <i class="fas fa-bars"></i></span></a>
         </div>
-    
-    <nav>
-        <ul>
-            <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
-            <li><a href="#"><i class="fas fa-user-check"></i> Detalles personales</a></li>
-            <li><a href="#"><i class="fas fa-tools"></i> Mis habilidades</i></a> </li>
-            <li><a href="#"><i class="fas fa-university"></i> Formación</a></li>
-            <li><a href="#"><i class="fas fa-user-tie"></i> ¿Qué hago?</i></a></li>
-            <li class="submenu">
-                <a href="#"><i class="fas fa-rocket"></i> Proyectos <i class="caret fas fa-chevron-down"></i></a>
-                <ul class="children">
-                    <li><a href=""> <i class="fas fa-circle"></i>Ilustración digital</i></a></li>
-                    <li><a href=""> <i class="fas fa-circle"></i>Fotografía</i></a></li>
-                    <li><a href=""> <i class="fas fa-circle"></i>Animación</i></a></li>
-                    <li><a href=""> <i class="fas fa-circle"></i>Audiovisual</i></a></li>
-                    <li><a href=""> <i class="fas fa-circle"></i>Programación web</i></a></li>
-                </ul>
-            </li>
-            <li><a href="#"><i class="fas fa-address-book"></i> Contactos</a></li>
-        </ul>
-    </nav>
+        <!-- menú de navegación -->
+        <nav id="inicio">
+            <ul>
+                <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
+                <li class="submenu">
+                    <a href="#none"><i class="fas fa-user-check"></i> Detalles personales <i class="caret fas fa-chevron-down"></i></a>
+                    <ul class="children">
+                        <li><a href="#frase"> <i class="fas fa-circle"></i>Autobiografía</i></a></li>
+                        <li><a href=""> <i class="fas fa-circle"></i>Perfil profesional</i></a></li>
+                        <li><a href="#interes"> <i class="fas fa-circle"></i>Hobbies e intereses</i></a></li>
+                    </ul>
+                </li>
+                <li><a href="#habilidades"><i class="fas fa-tools"></i> Mis habilidades</i></a> </li>
+                <li class="submenu">
+                    <a href="#none"><i class="fas fa-university"></i> Formación <i class="caret fas fa-chevron-down"></i></a>
+                    <ul class="children">
+                        <li><a href="#educacion"> <i class="fas fa-circle"></i>Educación</i></a></li>
+                        <li><a href="#experiencia"> <i class="fas fa-circle"></i>Experiencia laboral</i></a></li>
+                    </ul>
+                </li>
+                <li class="submenu"><a href="#quehago"><i class="fas fa-user-tie"></i> ¿Qué hago?</i></a></li>
+                <li class="submenu">
+                    <a href="#"><i class="fas fa-rocket"></i> Proyectos <i class="caret fas fa-chevron-down"></i></a>
+                    <ul class="children">
+                        <li><a href=""> <i class="fas fa-circle"></i>Ilustración digital</i></a></li>
+                        <li><a href=""> <i class="fas fa-circle"></i>Fotografía</i></a></li>
+                        <li><a href=""> <i class="fas fa-circle"></i>Animación</i></a></li>
+                        <li><a href=""> <i class="fas fa-circle"></i>Audiovisual</i></a></li>
+                        <li><a href=""> <i class="fas fa-circle"></i>Programación web</i></a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-address-book"></i> Contactos</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Frase inspiradora -->
 
@@ -50,16 +111,16 @@
     <!-- Auto biografia -->
 
     <div class="container row">
-        <div class="col-lx-3 col-lg-3 col-md-4 col-sm-12 col-xs-12">
+        <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
             <article>
-                <h3 id="biografiatitulo">Auto biografía</h3><br>
+                <h3 id="titulo">Auto biografía</h3><br>
             </article>
         </div>
     </div>
 
     <div class="container">
         <article>
-            <p class="biografia">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
+            <p class="texto">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
                 siempre se jactaban de ello y a medida que fuí creciendo estas habilidades crecieron conmigo de la mano con el 
                 liderazgo y orden, habilidades que fuí desarrolando en la secundaria ya que mis compañeros para librarse del trabajo
                 que implicaba ser el líder de grupo y demás activiades, entonces siempre me escojían a mí y yo asumía esta responsabilidad 
@@ -68,17 +129,43 @@
                 Desde siempre mis padres y profesores me han dicho y recalcado que estamos en la era de la tecnología y que aprender a entederla
                 y manejarla es algo emprecindible para cada unos de nosotros entonces debido a ello empecé a empezar a realizar mi creatividad de manera 
                 digital, y empecé a estudiar un técnico en Producción Multimedia y en donde me fue muy bien afortunadamente y ahora me dedico a esto y amo
-                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.
+                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.<i id="interes"></i>
+            </p>
+        </article>
+    </div>
+
+    <!-- Hobbies e inetreses -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">Hobbies e inetreses</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <p class="texto">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
+                siempre se jactaban de ello y a medida que fuí creciendo estas habilidades crecieron conmigo de la mano con el 
+                liderazgo y orden, habilidades que fuí desarrolando en la secundaria ya que mis compañeros para librarse del trabajo
+                que implicaba ser el líder de grupo y demás activiades, entonces siempre me escojían a mí y yo asumía esta responsabilidad 
+                y en les gradezco por tomar esa desición ya que gracioas a ello hoy en día no temo a hablar en público y socializar con personas
+                además también tengo buen liderazgo y manejo de grupo.<br>
+                Desde siempre mis padres y profesores me han dicho y recalcado que estamos en la era de la tecnología y que aprender a entederla
+                y manejarla es algo emprecindible para cada unos de nosotros entonces debido a ello empecé a empezar a realizar mi creatividad de manera 
+                digital, y empecé a estudiar un técnico en Producción Multimedia y en donde me fue muy bien afortunadamente y ahora me dedico a esto y amo
+                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.<i id="habilidades"></i>
             </p>
         </article>
     </div>
 
     <!-- Habilidades -->
-
-        <div class="row">
-            <div class="col-lx-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <h1 class="animate__animated animate__backInLeft">Habilidades blandas</h1>
-                    <h3>Creatividad e innovación <i class="fas fa-hat-wizard"></i></h3>
+        
+        <div class="container row" id="habilidades">
+            <div class="col-lx-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+                <h1 class="animate__animated animate__backInLeft tithabilidades">Habilidades blandas</h1>
+                    <h3>Innovación <i class="fas fa-hat-wizard"></i></h3>
                     <div onclick="move12()" id="myProgress12">
                         <div id="myBar12">0%</div>
                     </div>
@@ -136,8 +223,8 @@
 
             <!-- Habilidades ténicas -->
 
-            <div class="col-lx-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <h1 class="animate__animated animate__backInRight">Habilidades técnicas</h1>
+            <div class="col-lx-6 col-lg-6 col-md-10 col-sm-12 col-xs-12">
+            <h1 class="animate__animated animate__backInRight tithabilidades">Habilidades técnicas</h1>
                 <h3>Ofimática <i class="fas fa-file-alt"></i></h3>
                 <div onclick="move()" id="myProgress">
                     <div id="myBar">0%</div>
@@ -173,7 +260,7 @@
                     <div id="myBar7">0%</div>
                 </div>
                 <br>
-                <h3>Protools <i class="fas fa-music"></i> <i class="fas fa-volume-up"></i></h3>
+                <h3>Protools <i class="fas fa-music"></i></h3>
                 <div onclick="move8()" id="myProgress8">
                     <div id="myBar8">0%</div>
                 </div>
@@ -188,12 +275,166 @@
                     <div id="myBar10">0%</div>
                 </div>
                 <br>
-                <h3>Bootstrap <i class="fab fa-bootstrap"></i></h3>
+                <h3 id="educacion">Bootstrap <i class="fab fa-bootstrap"></i></h3>
                 <div onclick="move11()" id="myProgress11">
                     <div id="myBar11">0%</div>
                 </div>
-                <br>
             </div>
         </div>
+
+    <!-- Formacióm -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">Educación</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <b><i>Primaria:</i></b><br>
+                <i>Instituto:</i> Bravo Paez I.E.D. <br>
+                <i>Fecha:</i> 2009-2013 <br>
+                <i>Directivo:</i> Fulano de tal <br>
+                <i>Resumen:</i> bla bla bla bla <br>
+            </p>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <b><i>Bachillerato:</i></b><br>
+                <i>Instituto:</i> Quiroga Alianza I.E.D. <br>
+                <i>Fecha:</i> 2014-2019 <br>
+                <i>Directivo:</i> Edna Amparo Chávez <br>
+                <i>Resumen:</i> bla bla bla bla <br>
+                <i>Reconocimientos:</i> Segundo puesto en coccurso de Spelling.
+            </p>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <b><i>Técnico:</i></b><br>
+                <i>Instituto:</i> Sena <br>  
+                <i>Fecha:</i> 2018-2019 <br>
+                <i>Directivo:</i> Cristian  <br>
+                <i>Resumen:</i> bla bla bla bla <br>
+                <i>Reconocimientos:</i> Mejor grupo de trabajo.
+            </p>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <b><i>Tecnólogo:</i></b><br>
+                <i>Instituto:</i> Sena <br>  
+                <i>Fecha:</i> En proceso <br>
+                <i>Directivo:</i> Cristian Cuellar <br>
+                <i>Resumen:</i> bla bla bla bla <br>
+                <i id="experiencia">Reconocimientos:</i>
+            </p>
+        </article>
+    </div>
+
+    <!-- Experiencia laboral -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">Experiencia laboral</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <i>Empresa:</i> Mi Sta. Empanada <br>
+                <i>Fecha:</i> Marzo-Junio 2018 <br>
+                <i>Labor:</i> Vendedor <br>
+                <i>Jefe inmediato:</i> Paola Cubides <br>
+                <i>Número:</i> 310 2871062 <br>
+                <i>Reconocimientos:</i> Buen rendimiento
+            </p>
+        </article>
+
+        <article>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <i>Empresa:</i> Confecciones Ola Moreno Pulido <br>
+                <i>Fecha:</i> Noviembre-Diciembre del 2019<br>
+                <i>Labor:</i> Operario en máquina de cocer <br>
+                <i>Jefe inmediato:</i> Deysy Maje <br>
+                <i>Número:</i> 312 4912740 <br>
+                <i>Reconocimientos:</i> Rápido aprendizaje
+            </p>
+        </article>
+
+        <article>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <i>Empresa:</i> Amarello <br>
+                <i>Fecha:</i> Septiembre-Octubre del 2019<br>
+                <i>Labor:</i> Repartidor de masas <br>
+                <i>Jefe inmediato:</i> Ricardo Quiroga <br>
+                <i>Número:</i> 313 2853681 <br>
+            </p>
+        </article>
+        <article>
+            <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
+                <i>Empresa:</i> 180° Films <br>
+                <i>Fecha:</i> 2015-2018 (Diciembre de cada año)<br>
+                <i>Labor:</i> Recreacionista <br>
+                <i>Jefe inmediato:</i> Alejandro <br>
+                <i>Número:</i> 313 2853681 <br id="quehago">
+            </p>
+        </article>
+    </div>
+
+    <!--   Qué es lo que hago -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">¿Qué hago?</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container galeria">
+            <ul class="news-headlines">
+                <li class="selected">Ilustración digital</li>
+                <li>Fotografía y edición de imagen</li>
+                <li>Producción aduiovisual</li>
+                <li>Animación</li>
+                <li>Programación web</li>
+                <li>Identidad corporativa</li>
+            </ul>
+        
+            <div class="news-preview">
+        
+                <div class="news-content top-content">
+                    <img src="#">
+                    <p>A hundred red bicycles were stolen from under our noses yesterday, and nobody knows what went wrong.</p>
+                </div>
+            
+                <div class="news-content">
+                    <img src="#">
+                    <p>Ears on dogs can be a tricky thing. Find out more about this amazing story and why these dogs are a nuisance.</p>
+                </div>
+            
+                <div class="news-content">
+                    <img src="#">
+                    <p>Ah, the palm tree. It feeds us, it shades us, it does whatever we ask. We should think about it more deeply.</p>
+                </div>
+            
+                <div class="news-content">
+                    <img src="#">
+                    <p>Food is great. These recipes will make you appreciate food as if it were even greater than great. It will be super great.</p>
+                </div>
+            
+                <div class="news-content">
+                    <img src="#">
+                    <p>The Sherrif's department has put out an APB on these trucks. You know, this is the kind of thing that only happens in small towns.</p>
+                </div>
+            
+                <div class="news-content">
+                    <img src="#">
+                    <p>Giant orange pedal boats have been spotted at various beaches. In this report we tell you some ridiculous precautions to take.</p>
+                </div>
+            </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+    <script src="js/vertical.news.slider.js"></script>
 </body>
 </html>
