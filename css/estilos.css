@@ -26,7 +26,7 @@ header nav{
     max-width: 1104px;
     width: 95%;
     margin: 20px auto;
-    position: fixed;
+    position: fixed !important;
     height: 66px;
 }
 header nav ul{
@@ -76,7 +76,10 @@ header nav ul li .children li{
     overflow: hidden;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
-
+#menubar:hover{
+  color: white;
+  cursor: pointer;
+}
 /* media queries */
 
 @media screen and (max-width: 1095px){
@@ -106,9 +109,9 @@ header nav ul li .children li{
         margin-right: 20px;
     }
     header nav{
-      margin-top: 6px !important;
-        width: 75%;
-        height: calc(100% - 80px);
+        margin-top: 7px !important;
+        width: 55%;
+        height: 100%;
         position: fixed;
         right: 100%;
         margin: 0;
@@ -149,6 +152,19 @@ header nav ul li .children li{
       border-bottom-right-radius: 0px !important;
       text-align: center !important;
     }
+}
+@media screen and (max-width: 810px){
+  header nav{
+    margin-top: 27px !important;
+  }
+  .textoformacion{
+    margin-left: 10px !important;
+  }
+  .tithabilidades, .titempanada, .titproyectos{
+    width: 100%;
+    margin-left: -20px !important;
+    text-align: center;
+  }
 }
 @keyframes h3{
   0%,100%{
@@ -244,9 +260,10 @@ h3 {
   z-index: 10;
 }
 /* Formacion */
+
 .textoformacion{
   float: left;
-  margin: 10px 0px 20px 50px;
+  margin: 10px 0px 0px 20px;
   background-color: salmon;
   width: 100%;
   height: auto;
@@ -257,6 +274,301 @@ h3 {
   font-size: 18px;
 }
 
+/* que hago */
+
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+	margin: auto;
+}
+
+  /* contenedor principal */
+
+  .contenido-principal {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .contenido-principal__imagen {
+    vertical-align: top;
+    margin-right: 20px;
+    width: 50%;
+    max-width: 550px;
+  }
+  .contenido-principal__contenedor {
+    width: 50%;
+  }
+  .contenido-principal__titulo {
+    font-weight: bold;
+  }
+  .contenido-principal__resumen {
+    font-family: 'Roboto', sans-serif;
+    line-height: 30px;
+    color: black;
+  }
+  /* --- --- CAROUSEL --- --- */
+  .carousel__contenedor {
+    position: relative;
+  }
+  
+  .carousel__anterior, .carousel__siguiente {
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none !important;
+    top: calc(50% - 30px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: crimson;
+    opacity: 50%;
+    z-index: 900;
+  }
+  
+  .carousel__anterior:hover, .carousel__siguiente:hover {
+    opacity: 100%;
+  }
+  
+  .carousel__anterior {
+    left: -35px;
+  }
+  
+  .carousel__siguiente {
+    right: -35px;
+  }
+  
+  .carousel__lista {
+    overflow: hidden;
+  }
+  
+  .carousel__elemento {
+    text-align: center;
+  }
+  .carousel__indicadores .glider-dot {
+    background-color: crimson;
+    display: block;
+    width: 30px;
+    height: 4px;
+    opacity: .5;
+    border-radius: 0;
+  }
+  
+  .carousel__indicadores .glider-dot:hover {
+    opacity: 1;
+    background-color: crimson;
+  }
+  
+  .carousel__indicadores .glider-dot.active {
+    background-color: crimson;
+    border-color: crimson !important;
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 800px) {
+    body {
+      padding: 50px 0;
+    }
+    .contenido-principal {
+      flex-direction: column;
+    }
+    .contenido-principal__titulo{
+      margin-top: 20px;
+    }
+    .contenido-principal > * {
+      width: 100%;
+    }
+  }
+
+  /* Proyectos */
+.titproyectos{
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  background-color: crimson;
+  float: center;
+  color: white;
+  width: 500px;
+  text-align: center;
+  padding: 10px;
+}
+/* Sta. Empanada */
+.btnempanada{
+  margin: 10px;
+  margin-bottom: 50px !important;
+  width: 120px;
+  height: 50px;
+  background: salmon;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+.btnempanada:hover{
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  background: crimson;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.btnempanada::before{
+  content: 'Proyecto';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+}
+
+.btnempanada::after{
+  content: 'Sta. Empanada';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+  opacity: 0;
+}
+
+.btnempanada:hover::before{
+  transform: translate(-50%, -50%s) scale(3);
+  opacity: 0;
+}
+
+.btnempanada:hover::after{
+  transform: translate(-50%, -50%s) scale(1);
+  opacity: 1;
+}
+/* 9 mockups */
+.btnmockups{
+  margin: 10px;
+  margin-bottom: 50px !important;
+  width: 120px;
+  height: 50px;
+  background: salmon;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+.btnmockups:hover{
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  background: crimson;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.btnmockups::before{
+  content: 'Proyecto';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+}
+
+.btnmockups::after{
+  content: '9 Mockups';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+  opacity: 0;
+}
+
+.btnmockups:hover::before{
+  transform: translate(-50%, -50%s) scale(3);
+  opacity: 0;
+}
+
+.btnmockups:hover::after{
+  transform: translate(-50%, -50%s) scale(1);
+  opacity: 1;
+}
+/* Personales */
+.btnpersonales{
+  margin: 10px;
+  margin-bottom: 50px !important;
+  width: 120px;
+  height: 50px;
+  background: salmon;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+}
+.btnpersonales:hover{
+  margin: 10px;
+  width: 120px;
+  height: 50px;
+  background: crimson;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  border-radius: 5px;
+  
+}
+.btnpersonales::before{
+  content: 'Proyectos';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  color: crimson;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+}
+
+.btnpersonales::after{
+  content: 'Personales';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: .2s ease;
+  opacity: 0;
+}
+
+.btnpersonales:hover::before{
+  transform: translate(-50%, -50%s) scale(3);
+  opacity: 0;
+}
+
+.btnpersonales:hover::after{
+  transform: translate(-50%, -50%s) scale(1);
+  opacity: 1;
+}
 /* Habilidades técnicas */
 
 /* ofimática */

@@ -24,6 +24,16 @@ function main (){
     });
 }
 
+// Efectos nav
+
+/* $(function(){
+
+  var header = document.getElementById('header');
+  var headrrom = new Headroom(header);
+  headroom.init();
+
+}); */
+
 // Hablidades técnicas
 
 // Ofimatica
@@ -133,7 +143,7 @@ function move6() {
     i = 1;
     var elem = document.getElementById("myBar6");
     var width = 10;
-    var id = setInterval(frame, 50);
+    var id = setInterval(frame, 60);
     function frame() {
       if (width >= 15) {
         clearInterval(id);
@@ -470,3 +480,45 @@ function move22() {
     }
   }
 }
+
+// que hago
+
+window.addEventListener('load', function(){
+	new Glider(document.querySelector('.carousel__lista'), {
+		slidesToShow: 1,
+    slidesToScroll: 1,
+    draggable: true,
+		dots: '.carousel__indicadores',
+		arrows: {
+			prev: '.carousel__anterior', //botones
+			next: '.carousel__siguiente' //botones
+		},
+		responsive: [
+			{
+			  // pantallas mayores >= 800px
+			  breakpoint: 800,
+			  settings: {
+				// cantidad de imagenes en el carousel
+				slidesToShow: 2,
+				slidesToScroll: 2
+			  }
+			},{
+			  // pantallas mayores >= 1024px
+			  breakpoint: 1024,
+			  settings: {
+        // cantidad de imagenes en en carousel
+				slidesToShow: 3,
+				slidesToScroll: 3
+			  }
+			},{
+			  // pantallas mayores >= 1330px
+			  breakpoint: 1330,
+			  settings: {
+        // cantidad de imagenes en en carousel
+				slidesToShow: 4,
+				slidesToScroll: 4
+			  }
+			}
+		]
+	});
+});

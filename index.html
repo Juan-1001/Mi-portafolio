@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0, maximum-scale-1.0, minimum-sacale=1.0, shrink-to-fit=no">
     <meta name="description" content="Productor multimedia con conocimientos en ilustración digital, dotografía, edición de imagen, audiovuales, animación y programación web">
-    <meta name="keywords" content="multimedia, producción, imagen, ilustracion, fotografía, edición, animación, video, programación, código, photoshop, adobe, diseño, digital, html, css, javascript">
+    <meta name="keywords" content="multimedia, producción, edición de imagen, ilustracion, fotografía, edición, animación, video, programación, código, photoshop, adobe, diseño, digital, html, css, javascript">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="author" content="Juan Herrea">
     <meta name="copyright" content="Juan Herrera">
 
     <title>Juan Herrera</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="css/vertical.news.slider.css?v=1.0">
-    <script src="https://kit.fontawesome.com/54d316d0ae.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="codigo.js"></script>
+    
     <!-- scroll-->
 
 	<script src="js/smooth-scroll.polyfills.min.js"></script>
@@ -42,6 +40,9 @@
         var scroll = new SmoothScroll('a[href*="#frase"]', {
         speed: 900
         });
+        var scroll = new SmoothScroll('a[href*="#perfil"]', {
+        speed: 900
+        });
         var scroll = new SmoothScroll('a[href*="#interes"]', {
         speed: 900
         });
@@ -57,23 +58,32 @@
         var scroll = new SmoothScroll('a[href*="#quehago"]', {
         speed: 900
         });
+        var scroll = new SmoothScroll('a[href*="#sta"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#mockups"]', {
+        speed: 900
+        });
+        var scroll = new SmoothScroll('a[href*="#personales"]', {
+        speed: 900
+        });
     </script>
 </head>
 <body>
     <header>
         <!-- meni media queries -->
         <div class="menu_bar">
-            <a href="#" class="btn-menu"><span>Menú <i class="fas fa-bars"></i></span></a>
+            <a id="menubar" class="btn-menu"><span>Menú <i class="fas fa-bars"></i></span></a>
         </div>
         <!-- menú de navegación -->
-        <nav id="inicio">
+        <nav id="inicio"> 
             <ul>
                 <li><a href="#inicio"><i class="fas fa-home"></i> Inicio</a></li>
                 <li class="submenu">
                     <a href="#none"><i class="fas fa-user-check"></i> Detalles personales <i class="caret fas fa-chevron-down"></i></a>
                     <ul class="children">
                         <li><a href="#frase"> <i class="fas fa-circle"></i>Autobiografía</i></a></li>
-                        <li><a href=""> <i class="fas fa-circle"></i>Perfil profesional</i></a></li>
+                        <li><a href="#perfil"> <i class="fas fa-circle"></i>Perfil profesional</i></a></li>
                         <li><a href="#interes"> <i class="fas fa-circle"></i>Hobbies e intereses</i></a></li>
                     </ul>
                 </li>
@@ -87,16 +97,14 @@
                 </li>
                 <li class="submenu"><a href="#quehago"><i class="fas fa-user-tie"></i> ¿Qué hago?</i></a></li>
                 <li class="submenu">
-                    <a href="#"><i class="fas fa-rocket"></i> Proyectos <i class="caret fas fa-chevron-down"></i></a>
+                    <a href="#none"><i class="fas fa-rocket"></i> Proyectos <i class="caret fas fa-chevron-down"></i></a>
                     <ul class="children">
-                        <li><a href=""> <i class="fas fa-circle"></i>Ilustración digital</i></a></li>
-                        <li><a href=""> <i class="fas fa-circle"></i>Fotografía</i></a></li>
-                        <li><a href=""> <i class="fas fa-circle"></i>Animación</i></a></li>
-                        <li><a href=""> <i class="fas fa-circle"></i>Audiovisual</i></a></li>
-                        <li><a href=""> <i class="fas fa-circle"></i>Programación web</i></a></li>
+                        <li><a href="#sta"> <i class="fas fa-circle"></i>Sta. Empanada</i></a></li>
+                        <li><a href="#mockups"> <i class="fas fa-circle"></i>9 Mockups</i></a></li>
+                        <li><a href="#personales"> <i class="fas fa-circle"></i>Personales</i></a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fas fa-address-book"></i> Contactos</a></li>
+                <li><a href="#none"><i class="fas fa-address-book"></i> Contactos</a></li>
             </ul>
         </nav>
     </header>
@@ -114,6 +122,31 @@
         <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
             <article>
                 <h3 id="titulo">Auto biografía</h3><br>
+            </article>
+        </div>
+    </div>
+
+    <div class="container">
+        <article>
+            <p class="texto">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
+                siempre se jactaban de ello y a medida que fuí creciendo estas habilidades crecieron conmigo de la mano con el 
+                liderazgo y el orden, habilidades que fuí desarrolando en la secundaria ya que mis compañeros para librarse del trabajo
+                que implicaba ser el líder de grupo y demás activiades, entonces siempre me escojían a mí y yo asumía esta responsabilidad 
+                y en les gradezco por tomar esa desición ya que gracias a ello hoy en día no temo a hablar en público y socializar con personas
+                además también tengo buen liderazgo y manejo de grupo.<br>
+                Desde siempre mis padres y profesores me han dicho y recalcado que estamos en la era de la tecnología y que aprender a entederla
+                y manejarla es algo emprecindible para cada unos de nosotros, entonces debido a ello empecé a desarollar mi creatividad de manera 
+                digital, y empecé a estudiar un técnico en Producción Multimedia en donde me fue muy bien afortunadamente y ahora me dedico a esto y amo
+                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.<i id="perfil"></i>
+            </p>
+        </article>
+    </div>
+
+    <!-- Perfil profesional -->
+    <div class="container row">
+        <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">Perfil profesional</h3><br>
             </article>
         </div>
     </div>
@@ -146,16 +179,12 @@
 
     <div class="container">
         <article>
-            <p class="texto">Desde niño siempre me ha gustado dibujar y he sido bastante creativo, mis papás
-                siempre se jactaban de ello y a medida que fuí creciendo estas habilidades crecieron conmigo de la mano con el 
-                liderazgo y orden, habilidades que fuí desarrolando en la secundaria ya que mis compañeros para librarse del trabajo
-                que implicaba ser el líder de grupo y demás activiades, entonces siempre me escojían a mí y yo asumía esta responsabilidad 
-                y en les gradezco por tomar esa desición ya que gracioas a ello hoy en día no temo a hablar en público y socializar con personas
-                además también tengo buen liderazgo y manejo de grupo.<br>
-                Desde siempre mis padres y profesores me han dicho y recalcado que estamos en la era de la tecnología y que aprender a entederla
-                y manejarla es algo emprecindible para cada unos de nosotros entonces debido a ello empecé a empezar a realizar mi creatividad de manera 
-                digital, y empecé a estudiar un técnico en Producción Multimedia y en donde me fue muy bien afortunadamente y ahora me dedico a esto y amo
-                hacer cada uno de mis proyectos digitales y me encanta crear cosas nuevas con impacto a nivel digital.<i id="habilidades"></i>
+            <p class="texto">Siempre me ha gustado el deporte y no es que sea tan malo en ello, por lo general me he orientado a los 
+                deportes extremos: de niño practicaba Bicicross con mi hermano pues mi papá nos enseñó a los dos, depués de ello me fuí
+                con el Skateboarding y ahora me inclino y practico Parkour, es un deporte que me ha gustado bastante y en donde me puedo 
+                divertir con mis amigos y distaerme un rato. Otro hobbie que he empezado a tomar desdes hace dos años es tocar guitarra, 
+                cuando no puedo salir o cuando no tengo ganas de entrenar busco algún tutorial en YouTube de alguna canción que me guste 
+                y la aprendo para poder cantarla o solo ditraerme un rato aprendiendo acordes o esclas y demás cosas.<i id="habilidades"></i>
             </p>
         </article>
     </div>
@@ -298,8 +327,9 @@
                 <b><i>Primaria:</i></b><br>
                 <i>Instituto:</i> Bravo Paez I.E.D. <br>
                 <i>Fecha:</i> 2009-2013 <br>
-                <i>Directivo:</i> Fulano de tal <br>
+                <i>Directivo:</i> Carolina Betancur<br>
                 <i>Resumen:</i> bla bla bla bla <br>
+                <i>Reconocimientos:</i> Primer puesto a nivel primaria en torneo de fútbol
             </p>
             <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
                 <b><i>Bachillerato:</i></b><br>
@@ -313,7 +343,7 @@
                 <b><i>Técnico:</i></b><br>
                 <i>Instituto:</i> Sena <br>  
                 <i>Fecha:</i> 2018-2019 <br>
-                <i>Directivo:</i> Cristian  <br>
+                <i>Directivo:</i> Cristian Cuellar <br>
                 <i>Resumen:</i> bla bla bla bla <br>
                 <i>Reconocimientos:</i> Mejor grupo de trabajo.
             </p>
@@ -321,9 +351,9 @@
                 <b><i>Tecnólogo:</i></b><br>
                 <i>Instituto:</i> Sena <br>  
                 <i>Fecha:</i> En proceso <br>
-                <i>Directivo:</i> Cristian Cuellar <br>
-                <i>Resumen:</i> bla bla bla bla <br>
-                <i id="experiencia">Reconocimientos:</i>
+                <i>Directivo:</i> Fulano de tal <br> <i id="experiencia"></i>
+                <i>Resumen:</i> bla bla bla bla <br> 
+                <i>Reconocimientos:</i>
             </p>
         </article>
     </div>
@@ -372,11 +402,11 @@
         </article>
         <article>
             <p class="textoformacion col-lx-5 col-lg-5 col-md-10 col-sm-12 col-xs-12"> 
-                <i>Empresa:</i> 180° Films <br>
-                <i>Fecha:</i> 2015-2018 (Diciembre de cada año)<br>
-                <i>Labor:</i> Recreacionista <br>
+                <i>Empresa:</i> 180° Films <br> 
+                <i>Fecha:</i> 2015-2018 (Diciembre de cada año)<br> 
+                <i>Labor:</i> Recreacionista <br> <i id="quehago"></i>
                 <i>Jefe inmediato:</i> Alejandro <br>
-                <i>Número:</i> 313 2853681 <br id="quehago">
+                <i>Número:</i> 313 2853681 
             </p>
         </article>
     </div>
@@ -384,57 +414,163 @@
     <!--   Qué es lo que hago -->
 
     <div class="container row">
-        <div class="col-lx-3 col-lg-4 col-md-5 col-sm-12 col-xs-12">
+        <div class="col-lx-3 col-lg-3 col-md-5 col-sm-12 col-xs-12">
             <article>
                 <h3 id="titulo">¿Qué hago?</h3><br>
             </article>
         </div>
     </div>
 
-    <div class="container galeria">
-            <ul class="news-headlines">
-                <li class="selected">Ilustración digital</li>
-                <li>Fotografía y edición de imagen</li>
-                <li>Producción aduiovisual</li>
-                <li>Animación</li>
-                <li>Programación web</li>
-                <li>Identidad corporativa</li>
-            </ul>
-        
-            <div class="news-preview">
-        
-                <div class="news-content top-content">
-                    <img src="#">
-                    <p>A hundred red bicycles were stolen from under our noses yesterday, and nobody knows what went wrong.</p>
-                </div>
-            
-                <div class="news-content">
-                    <img src="#">
-                    <p>Ears on dogs can be a tricky thing. Find out more about this amazing story and why these dogs are a nuisance.</p>
-                </div>
-            
-                <div class="news-content">
-                    <img src="#">
-                    <p>Ah, the palm tree. It feeds us, it shades us, it does whatever we ask. We should think about it more deeply.</p>
-                </div>
-            
-                <div class="news-content">
-                    <img src="#">
-                    <p>Food is great. These recipes will make you appreciate food as if it were even greater than great. It will be super great.</p>
-                </div>
-            
-                <div class="news-content">
-                    <img src="#">
-                    <p>The Sherrif's department has put out an APB on these trucks. You know, this is the kind of thing that only happens in small towns.</p>
-                </div>
-            
-                <div class="news-content">
-                    <img src="#">
-                    <p>Giant orange pedal boats have been spotted at various beaches. In this report we tell you some ridiculous precautions to take.</p>
-                </div>
-            </div>
+    <div class="contenedor">
+		<main class="contenido-principal">
+			<img src="images/1.png" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+			<div class="contenido-principal__contenedor">
+				<h3 class="contenido-principal__titulo">¿Qué hace un Productor Multimedia?</h3>
+				<p class="contenido-principal__resumen">
+                    La producción multimadia es el uso de varias tecnologías de la mano con Softwares profesionales para el correctro uso 
+                    en cada una de las necesidades, estas pueden ser animaciones, ilustraciones didigitales, fotografía, edición de imagen, 
+                    edición y creación audiovisual, desarrollo web, uso de resdes sociales y demás.
+				</p>
+				<p class="contenido-principal__resumen">
+					Acontinuación voy a mostrar algunos ejemplos de lo que sería cada una de las cosas en las que yo he trabajado.
+				</p>
+			</div>
+		</main>
+
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="images/2.png" alt="Rock and Roll Hall of Fame">
+						<p>Ilustración Digital</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/3.png" alt="Constitution Square - Tower I">
+						<p>Fotografía</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/4.png" alt="Empire State Building">
+						<p>Edición de imagen</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/5.png" alt="Harmony Tower">
+						<p>Animación</p>
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="images/6.png" alt="Empire State Building">
+						<p>Audiovisual</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/7.png" alt="Harmony Tower">
+						<p>Desarrollo web</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/8.png" alt="Empire State Building">
+						<p>Identidad corporativa</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="images/9.png" alt="Harmony Tower">
+						<p>Publicidad</p>
+					</div>
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente"> 
+					<i class="fas fa-chevron-right"></i>  <i id="sta"></i>
+				</button> 
+			</div> 
+
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+	</div>
+
+    <!-- Mis trabajos -->
+
+    <div class="container row">
+        <div class="col-lx-3 col-lg-3 col-md-5 col-sm-12 col-xs-12">
+            <article>
+                <h3 id="titulo">Proyectos</h3><br>
+            </article>
+        </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
-    <script src="js/vertical.news.slider.js"></script>
+
+    <!-- Sta. Empanada -->
+
+    <center>
+        <div class="container row" id="proyectos">
+            <div class="col-lx-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="animate__animated animate__backInLeft titproyectos">Sta. Empanada</h3>
+            </div>
+        </div>
+    
+
+        <div class="container">
+            <article>
+                <p class="texto">El proyecto de Sta. Empanada es un proyecto que fue relizado en el técnico, en donde mi grupo de trabajo y yo
+                    escogimos un una micro empresa real que se dedica a la venta de empanadas en un tráiler en la calle. Nuestro proyecto consistía
+                    en crear la identidad corporativa de esta empresa analizando piezas como la competencia, el análisis del mercado, análisis de marca y
+                    demás situaciones que influyeran en ello, y a partir de cada una de estas cosas fuimos desarollando elementos como el logo, tarjetas 
+                    tarjetas de presentación, brochure, uso tipografías, colores corporativos, spot pucblicitario, mockups de sus elemetos como delantales, 
+                    gorras entre otras cosas, también desarrollamos papelería como hojas membrete y esferos corporativos, todo esto de la mano con firma 
+                    digital ceración de redes sociales y por último pero no menos importante creamos una página web para poder completar la identidad 
+                    corporativa de esta empresa la cual quedó bastante contenta con el trabajo realizado.
+                </p>
+            </article>
+            <div>
+                <img src="images/logo footer.png" alt="Logo Sta. Empanada" title="Logo Sta. Empanada"> 
+                <i id="mockups"></i>
+            </div> 
+            <button class="btnempanada animate__animated animate__backInRight"></button> 
+        </div>
+
+        <!-- 9 mockups -->
+
+        <div class="container row" id="proyectos">
+            <div class="col-lx-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="animate__animated animate__backInLeft titproyectos">9 Mockups</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <article>
+                <p class="texto">El proyecto de los 9 mockups consiste en la diagramación de una serie de estilos
+                    y diferentes formas de las que puedo desarrolar páginas web con sus diferentes estilos y caraterísticas 
+                    que se pueden ver de una manera bastante jocosa y que pueden ir de lamano con la atracción e interacción 
+                    del cliente con la página web y sus componenetes. <i id="personales"></i>
+                </p>
+            </article>
+            <button class="btnmockups animate__animated animate__backInRight"></button>
+        </div>
+
+        <!-- Personales -->
+
+        <div class="container row" id="proyectos">
+            <div class="col-lx-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h3 class="animate__animated animate__backInLeft titproyectos">Personales</h3>
+            </div>
+        </div>
+
+        <div class="container">
+            <article>
+                <p class="texto">Estos son pequeños proyectos que he iniciado por cuenta propia ya sea de ilustraciones, 
+                    fotografías, animaciones, podcasts o audiovisuales, diagramación web o puede que una que otra cosa 
+                    pequeña que me haya gustado bastante y considere que sea pertinente exponerlo para que la usted cocnozca
+                    mis trabajos desde lo más simple hasta lo más complejo que puedo llegar a relizar en cada una de las áreas 
+                    en donde yo me puedo desarrolar. <i id="contactos"></i>
+                </p>
+            </article>
+            <button class="btnpersonales animate__animated animate__backInRight"></button>
+        </div>
+    </center>
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/54d316d0ae.js" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/codigo.js"></script>
 </body>
 </html>
