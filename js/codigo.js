@@ -24,16 +24,6 @@ function main (){
     });
 }
 
-// Efectos nav
-
-/* $(function(){
-
-  var header = document.getElementById('header');
-  var headrrom = new Headroom(header);
-  headroom.init();
-
-}); */
-
 // Hablidades técnicas
 
 // Ofimatica

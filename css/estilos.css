@@ -3,6 +3,7 @@
     padding: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -13,18 +14,20 @@ body{
     display: none;
 }
 header{
-    width: 95%;
+    width: 100%;
     align-content: center;
     display: flex;
+    align-items: center;
+    align-content: center;
     margin: 0;
     padding: 0;
 }
 header nav{
-    margin-top: -90px !important;
+    margin-top: -100px !important;
     background-color: #023859;
+    text-align: center;
     z-index: 1000;
-    max-width: 1104px;
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
     position: fixed !important;
     height: 66px;
@@ -45,14 +48,14 @@ header nav ul li a{
     color: #fffff1;
     display: block;
     text-decoration: none;
-    padding: 20px;
+    padding: 20px 8px;
 }
 header nav ul li a:hover{
-  color: #fffff1;
-  display: block;
-  text-decoration: none;
-  padding: 20px;
-}
+    color: #fffff1;
+    display: block;
+    text-decoration: none;
+    padding: 20px 8px;
+  }
 .fa-circle{
     font-size: 4px;
     margin-top: 8px;
@@ -68,8 +71,9 @@ header nav ul li .children{
     display: none;
     background: #011826;
     position: absolute;
-    width: 127%;
+    width: 128%;
     z-index: 1000;
+    text-align: left;
 }
 header nav ul li .children li{
     display: block;
@@ -82,7 +86,7 @@ header nav ul li .children li{
 }
 /* media queries */
 
-@media screen and (max-width: 1095px){
+@media screen and (max-width: 830px){
     body{
         padding-top: 70px;
     }
@@ -116,6 +120,7 @@ header nav ul li .children li{
         right: 100%;
         margin: 0;
         overflow: scroll;
+        text-align: left;
     }
     header nav ul li{
         display: block;
@@ -123,10 +128,11 @@ header nav ul li .children li{
     }
     header nav ul li a{
         display: block;
+        margin-left: 10px;
     }
     header nav ul li:hover .children{
         display: none;
-        text-decoration: none;
+        text-align: left;
         color: white;
     }
     header nav ul li .children{
@@ -159,6 +165,7 @@ header nav ul li .children li{
   }
   .textoformacion{
     margin-left: 10px !important;
+    padding: 15px 35px !important;
   }
   .tithabilidades, .titempanada, .titproyectos{
     width: 100%;
@@ -374,10 +381,18 @@ h3 {
       flex-direction: column;
     }
     .contenido-principal__titulo{
+      margin-top: 30px;
+    }
+    .contenido-principal__resumen{
       margin-top: 20px;
+      margin-bottom: -40px !important;
+      padding: 20px 35px !important;
     }
     .contenido-principal > * {
       width: 100%;
+    }
+    .carousel__elemento p{
+      margin-top: 20px !important;
     }
   }
 
@@ -928,4 +943,78 @@ h3 {
 }
 #myBar22 {
   margin-bottom: 20px;
+}
+
+/* Contactos */
+
+.social{
+  position: fixed;
+  right: 0;
+  top: 200px;
+  z-index: 1000;
+}
+.social ul{
+  list-style: none;
+}
+.social ul li a{
+  display: inline-block;
+  color: white;
+  background-color: transparent;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  width: 50px;
+  text-align: left;
+  -webkit-transition-: all 500ms ease;
+  -moz-transition-: all 500ms ease;
+  -o-transition-: all 500ms ease;
+  transition: all 500ms ease;
+}
+.social ul li .fa-whatsapp {
+  background-color: #00bb2d;
+  padding: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+.social ul li a .fa-whatsapp:hover{
+  background-color: crimson;
+}
+.social ul li .fa-facebook-f {
+  background-color: #3b5998;
+  padding: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+.social ul li .fa-facebook-f:hover{
+  background-color: crimson;
+}
+.social ul li .fa-instagram {
+  background-color: #dd2a7b;
+  padding: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+.social ul li a .fa-instagram:hover{
+  background-color: crimson;
+}
+.social ul li .fa-twitter {
+  background-color: #00acee;
+  padding: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+.social ul li a .fa-twitter:hover{
+  background-color: crimson;
+}
+.social ul li .fa-pinterest-p {
+  background-color: #bd081c;
+  padding: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+}
+.social ul li a .fa-pinterest-p:hover{
+  background-color: crimson;
+}
+.social ul li a:hover{
+  padding: 0px 20px 0px 0px;
 }
