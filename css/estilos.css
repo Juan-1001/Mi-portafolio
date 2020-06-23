@@ -158,6 +158,9 @@ header nav ul li .children li{
       border-bottom-right-radius: 0px !important;
       text-align: center !important;
     }
+    .redes{
+      display: none;
+    }
 }
 @media screen and (max-width: 810px){
   header nav{
@@ -947,16 +950,16 @@ h3 {
 
 /* Contactos */
 
-.social{
+.redes{
   position: fixed;
   right: 0;
   top: 200px;
   z-index: 1000;
 }
-.social ul{
+.redes ul{
   list-style: none;
 }
-.social ul li a{
+.redes ul li a{
   display: inline-block;
   color: white;
   background-color: transparent;
@@ -970,51 +973,67 @@ h3 {
   -o-transition-: all 500ms ease;
   transition: all 500ms ease;
 }
-.social ul li .fa-whatsapp {
+.redes ul li .fa-whatsapp {
   background-color: #00bb2d;
   padding: 15px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.social ul li a .fa-whatsapp:hover{
+.redes ul li a .fa-whatsapp:hover{
   background-color: crimson;
 }
-.social ul li .fa-facebook-f {
+.redes ul li .fa-facebook-f {
   background-color: #3b5998;
   padding: 15px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.social ul li .fa-facebook-f:hover{
+.redes ul li .fa-facebook-f:hover{
   background-color: crimson;
 }
-.social ul li .fa-instagram {
+.redes ul li .fa-instagram {
   background-color: #dd2a7b;
   padding: 15px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.social ul li a .fa-instagram:hover{
+.redes ul li a .fa-instagram:hover{
   background-color: crimson;
 }
-.social ul li .fa-twitter {
+.redes ul li .fa-twitter {
   background-color: #00acee;
   padding: 15px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.social ul li a .fa-twitter:hover{
+.redes ul li a .fa-twitter:hover{
   background-color: crimson;
 }
-.social ul li .fa-pinterest-p {
+.redes ul li .fa-pinterest-p {
   background-color: #bd081c;
   padding: 15px;
   margin-left: -5px;
   margin-right: 10px;
 }
-.social ul li a .fa-pinterest-p:hover{
+.redes ul li a .fa-pinterest-p:hover{
   background-color: crimson;
 }
-.social ul li a:hover{
+.redes ul li a:hover{
   padding: 0px 20px 0px 0px;
+}
+
+/* Footer */
+
+footer{
+  background-color: salmon;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 25px;
+}
+footer .redes2 a{
+  color: white;
+  margin: 0px 10px;
+  margin-top: 50px;
+  font-size: 16px;
 }
